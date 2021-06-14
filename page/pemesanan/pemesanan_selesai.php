@@ -9,7 +9,7 @@ session_start();
 <head>
     <?php
     $title = "MobiRent - Pemesanan Selesai";
-    include '../../component/head.php';
+    include '../../component_2/head.php';
     include '../../function/tanggal-indo.php';
     include '../../function/random_number.php';
     ?>
@@ -19,7 +19,7 @@ session_start();
 <body>
     <div id="app">
         <!-- Start Header -->
-        <?php include '../../component/header.php'; ?>
+        <?php include '../../component_2/header.php'; ?>
 
         <div class="title_main_wrapper">
             <div class="container">
@@ -173,12 +173,12 @@ session_start();
         <!-- End Main -->
 
         <!-- Start Footer -->
-        <?php include '../../component/footer.php'  ?>
+        <?php include '../../component_2/footer.php'  ?>
         <!-- End Footer -->
     </div>
 
     <!-- Start JS -->
-    <?php include '../../component/js.php'; ?>
+    <?php include '../../component_2/js.php'; ?>
     <!-- End JS -->
 
     <script>

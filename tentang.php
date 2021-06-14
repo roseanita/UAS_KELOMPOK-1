@@ -87,22 +87,22 @@
 						<div class="row partner-logos">
 							<div class="col-md-3 col-6">
 								<div class="partner-logo">
-									<img class="img-fluid" src="assets/img/mitra/partner-1.png" alt="Mitra" srcset="assets/img/mitra/partner-1.png 1x, assets/img/mitra/partner-1.png@2x 2x">
+									<img class="img-fluid" src="assets/img/mitra/partner-1.png" alt="Mitra" srcset="assets/img/mitra/partner-1.png 1x, assets/img/mitra/partner-1.png 2x">
 								</div>
 							</div>
 							<div class="col-md-3 col-6">
 								<div class="partner-logo">
-									<img class="img-fluid" src="assets/img/mitra/partner-2.png" alt="Mitra" srcset="assets/img/mitra/partner-2.png 1x, assets/img/mitra/partner-2.png@2x 2x">
+									<img class="img-fluid" src="assets/img/mitra/partner-2.png" alt="Mitra" srcset="assets/img/mitra/partner-2.png 1x, assets/img/mitra/partner-2.png 2x">
 								</div>
 							</div>
 							<div class="col-md-3 col-6">
 								<div class="partner-logo">
-									<img class="img-fluid" src="assets/img/mitra/partner-3.png" alt="Mitra" srcset="assets/img/mitra/partner-3.png 1x, assets/img/mitra/partner-3.png@2x 2x">
+									<img class="img-fluid" src="assets/img/mitra/partner-3.png" alt="Mitra" srcset="assets/img/mitra/partner-3.png 1x, assets/img/mitra/partner-3.png 2x">
 								</div>
 							</div>
 							<div class="col-md-3 col-6">
 								<div class="partner-logo">
-									<img class="img-fluid" src="assets/img/mitra/partner-4.png" alt="Mitra" srcset="assets/img/mitra/partner-4.png 1x, assets/img/mitra/partner-4.png@2x 2x">
+									<img class="img-fluid" src="assets/img/mitra/partner-4.png" alt="Mitra" srcset="assets/img/mitra/partner-4.png 1x, assets/img/mitra/partner-4.png 2x">
 								</div>
 							</div>
 						</div>

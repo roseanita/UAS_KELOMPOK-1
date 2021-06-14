@@ -6,7 +6,7 @@
 <head>
     <?php
     $title = "MobiRent - Tim Kami";
-    include '../../component/head.php'
+    include '../../component_2/head.php'
     ?>
 </head>
 <!-- End head -->
@@ -14,7 +14,7 @@
 <body>
     <div id="app">
         <!-- Start Header -->
-        <?php include '../../component/header.php' ?>
+        <?php include '../../component_2/header.php' ?>
 
         <div class="title_main_wrapper">
             <div class="container">
@@ -116,12 +116,12 @@
         <!-- End Main -->
 
         <!-- Start Footer -->
-        <?php include '../../component/footer.php'  ?>
+        <?php include '../../component_2/footer.php'  ?>
         <!-- End Footer -->
     </div>
 
     <!-- Start JS -->
-    <?php include '../../component/js.php' ?>
+    <?php include '../../component_2/js.php' ?>
     <!-- End JS -->
 
     <script>

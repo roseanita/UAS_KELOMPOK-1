@@ -9,7 +9,7 @@ session_start();
 <head>
     <?php
     $title = "MobiRent - Pemesanan Selesai";
-    include '../../component/head.php';
+    include '../../component_2/head.php';
     include '../../function/tanggal-indo.php';
     include '../../function/random_number.php';
     ?>
@@ -101,7 +101,7 @@ session_start();
     </div>
 
     <!-- Start JS -->
-    <?php include '../../component/js.php'; ?>
+    <?php include '../../component_2/js.php'; ?>
     <!-- End JS -->
 
     <script>

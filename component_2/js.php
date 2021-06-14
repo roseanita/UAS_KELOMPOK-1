@@ -1,5 +1,5 @@
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.easing.1.3.js"></script>
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/jquery.easing.1.3.js"></script>
 
 <script>
     // ScrollChanged

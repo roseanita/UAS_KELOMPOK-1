@@ -1,7 +1,7 @@
 <footer>
     <div class="container">
         <div class="sec tentang-f">
-            <img src="assets/img/logo/MobiRent-2.png" alt="MobiRent-2">
+            <img src="../../assets/img/logo/MobiRent-2.png" alt="MobiRent-2">
             <p class="text-align-justify">
                 MobiRent dibuat oleh Kelompok 1 - Sistem Informasi untuk membantu dalam menyewa mobil di daerah Jakarta, dan juga sebagai pengambilan nilai UAS.
             </p>
@@ -9,12 +9,12 @@
         <div class="sec menu">
             <h2>Tautan Langsung</h2>
             <ul>
-                <li><a href="index.php">Beranda</a></li>
-                <li><a href="tentang.php">Tentang</a></li>
-                <li><a href="mobil.php">Mobil</a></li>
-                <li><a href="tim.php">Tim Kami</a></li>
-                <li><a href="layanan.php">Layanan</a></li>
-                <li><a href="kontak.php">Kontak</a></li>
+                <li><a href="../pengguna/index.php">Beranda</a></li>
+                <li><a href="../pengguna/tentang.php">Tentang</a></li>
+                <li><a href="../pengguna/mobil.php">Mobil</a></li>
+                <li><a href="../pengguna/tim.php">Tim Kami</a></li>
+                <li><a href="../pengguna/layanan.php">Layanan</a></li>
+                <li><a href="../pengguna/kontak.php">Kontak</a></li>
             </ul>
         </div>
         <div class="sec contact">
