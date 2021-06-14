@@ -6,7 +6,7 @@
 <head>
 	<?php
 	$title = "MobiRent - Pilih Mobil";
-	include '../../component/head.php'
+	include 'component/head.php'
 	?>
 </head>
 <!-- End head -->
@@ -14,7 +14,7 @@
 <body>
 	<div id="app">
 		<!-- Start Header -->
-		<?php include '../../component/header.php' ?>
+		<?php include 'component/header.php' ?>
 
 		<div class="title_main_wrapper">
 			<div class="container">
@@ -29,7 +29,7 @@
 							<div class="title_right_cont_wrapper">
 								<ul>
 									<li class="barrier">
-										<a href="../pengguna/index.php" style="text-decoration: none;">Beranda</a>
+										<a href="index.php" style="text-decoration: none;">Beranda</a>
 									</li>
 									<li style="line-height: 1;">Mobil</li>
 								</ul>
@@ -170,7 +170,7 @@
 											<div class="row">
 												<div class="jenis-mobil-thumb text-align-center">
 													<a>
-														<img class="img-fluid mt-30" src="../../assets/img/mobil/jenis1.png" alt="" srcset="../../assets/img/mobil/jenis1.png 1x, ../../assets/img/mobil/jenis1.png 2x">
+														<img class="img-fluid mt-30" src="assets/img/mobil/jenis1.png" alt="" srcset="assets/img/mobil/jenis1.png 1x, assets/img/mobil/jenis1.png 2x">
 													</a>
 												</div>
 												<div class="col-12 col-md-4">
@@ -206,15 +206,15 @@
 														</div>
 														<div class="rn-car-meta">
 															<span>
-																<img src="../../assets/img/detail/penumpang.png" alt="" style="width: 15px;">
+																<img src="assets/img/detail/penumpang.png" alt="" style="width: 15px;">
 																3 Penumpang
 															</span>
 															<span>
-																<img src="../../assets/img/detail/bagasi.png" alt="" style="width: 15px;">
+																<img src="assets/img/detail/bagasi.png" alt="" style="width: 15px;">
 																2 bagasi
 															</span>
 														</div>
-														<a class="rn-car-more-info" href="pemeriksaan_lanjutan.php">
+														<a class="rn-car-more-info" href="#" onclick="return pindahLogin()">
 															Informasi Lebih Lanjut
 														</a>
 													</div>
@@ -229,7 +229,7 @@
 														</div>
 
 														<div class="mt-40 text-center">
-															<a href="../../function/rental.php?step_2=Audi Q3, 640080, jenis1" class="purple rent-btn">
+															<a href="#" onclick="return pindahLogin()" class="purple rent-btn">
 																Pesan Sekarang
 															</a>
 														</div>
@@ -238,13 +238,13 @@
 											</div>
 										</div>
 									</div>
-									
+
 									<div class="col-lg-12 col-md-12">
 										<div class="jenis-mobil" style="display: block;">
 											<div class="row">
 												<div class="jenis-mobil-thumb text-align-center">
 													<a>
-														<img class="img-fluid mt-30" src="../../assets/img/mobil/jenis2.png" alt="" srcset="../../assets/img/mobil/jenis2.png 1x, ../../assets/img/mobil/jenis2.png 2x">
+														<img class="img-fluid mt-30" src="assets/img/mobil/jenis2.png" alt="" srcset="assets/img/mobil/jenis2.png 1x, assets/img/mobil/jenis2.png 2x">
 													</a>
 												</div>
 												<div class="col-12 col-md-4">
@@ -280,15 +280,15 @@
 														</div>
 														<div class="rn-car-meta">
 															<span>
-																<img src="../../assets/img/detail/penumpang.png" alt="" style="width: 15px;">
+																<img src="assets/img/detail/penumpang.png" alt="" style="width: 15px;">
 																3 Penumpang
 															</span>
 															<span>
-																<img src="../../assets/img/detail/bagasi.png" alt="" style="width: 15px;">
+																<img src="assets/img/detail/bagasi.png" alt="" style="width: 15px;">
 																2 bagasi
 															</span>
 														</div>
-														<a class="rn-car-more-info" href="pemeriksaan_lanjutan.php">
+														<a class="rn-car-more-info" href="#" onclick="return pindahLogin()">
 															Informasi Lebih Lanjut
 														</a>
 													</div>
@@ -303,7 +303,7 @@
 														</div>
 
 														<div class="mt-40 text-center">
-															<a href="../../function/rental.php?step_2=Nissan 370Z, 1052576, jenis2" class="purple rent-btn">
+															<a href="#" onclick="return pindahLogin()" class="purple rent-btn">
 																Pesan Sekarang
 															</a>
 														</div>
@@ -318,7 +318,7 @@
 											<div class="row">
 												<div class="jenis-mobil-thumb text-align-center">
 													<a>
-														<img class="img-fluid mt-30" src="../../assets/img/mobil/jenis3.png" alt="" srcset="../../assets/img/mobil/jenis3.png 1x, ../../assets/img/mobil/jenis3.png 2x">
+														<img class="img-fluid mt-30" src="assets/img/mobil/jenis3.png" alt="" srcset="assets/img/mobil/jenis3.png 1x, assets/img/mobil/jenis3.png 2x">
 													</a>
 												</div>
 												<div class="col-12 col-md-4">
@@ -354,15 +354,15 @@
 														</div>
 														<div class="rn-car-meta">
 															<span>
-																<img src="../../assets/img/detail/penumpang.png" alt="" style="width: 15px;">
+																<img src="assets/img/detail/penumpang.png" alt="" style="width: 15px;">
 																3 Penumpang
 															</span>
 															<span>
-																<img src="../../assets/img/detail/bagasi.png" alt="" style="width: 15px;">
+																<img src="assets/img/detail/bagasi.png" alt="" style="width: 15px;">
 																2 bagasi
 															</span>
 														</div>
-														<a class="rn-car-more-info" href="pemeriksaan_lanjutan.php">
+														<a class="rn-car-more-info" href="#" onclick="return pindahLogin()">
 															Informasi Lebih Lanjut
 														</a>
 													</div>
@@ -377,7 +377,7 @@
 														</div>
 
 														<div class="mt-40 text-center">
-															<a href="../../function/rental.php?step_2=Toyota Camry, 782320, jenis3" class="purple rent-btn">
+															<a href="#" onclick="return pindahLogin()" class="purple rent-btn">
 																Pesan Sekarang
 															</a>
 														</div>
@@ -392,7 +392,7 @@
 											<div class="row">
 												<div class="jenis-mobil-thumb text-align-center">
 													<a>
-														<img class="img-fluid mt-30" src="../../assets/img/mobil/jenis4.png" alt="" srcset="../../assets/img/mobil/jenis4.png 1x, ../../assets/img/mobil/jenis4.png 2x">
+														<img class="img-fluid mt-30" src="assets/img/mobil/jenis4.png" alt="" srcset="assets/img/mobil/jenis4.png 1x, assets/img/mobil/jenis4.png 2x">
 													</a>
 												</div>
 												<div class="col-12 col-md-4">
@@ -428,15 +428,15 @@
 														</div>
 														<div class="rn-car-meta">
 															<span>
-																<img src="../../assets/img/detail/penumpang.png" alt="" style="width: 15px;">
+																<img src="assets/img/detail/penumpang.png" alt="" style="width: 15px;">
 																3 Penumpang
 															</span>
 															<span>
-																<img src="../../assets/img/detail/bagasi.png" alt="" style="width: 15px;">
+																<img src="assets/img/detail/bagasi.png" alt="" style="width: 15px;">
 																2 bagasi
 															</span>
 														</div>
-														<a class="rn-car-more-info" href="pemeriksaan_lanjutan.php">
+														<a class="rn-car-more-info" href="#" onclick="return pindahLogin()">
 															Informasi Lebih Lanjut
 														</a>
 													</div>
@@ -451,7 +451,7 @@
 														</div>
 
 														<div class="mt-40 text-center">
-															<a href="../../function/rental.php?step_2=BMW X3, 711200, jenis4" class="purple rent-btn">
+															<a href="#" onclick="return pindahLogin()" class="purple rent-btn">
 																Pesan Sekarang
 															</a>
 														</div>
@@ -471,16 +471,26 @@
 		<!-- End Main -->
 
 		<!-- Start Footer -->
-		<?php include '../../component/footer.php'  ?>
+		<?php include 'component/footer.php'  ?>
 		<!-- End Footer -->
 	</div>
 
 	<!-- Start JS -->
-	<?php include '../../component/js.php' ?>
+	<?php include 'component/js.php' ?>
 	<!-- End JS -->
 
 	<script>
 		$('#mobil').addClass('active')
+
+		function pindahLogin() {
+			let a = confirm("Anda harus daftar terlebih dahulu, ingin melanjutkan?");
+
+            if (a) {
+                window.location = "auth/login.php";
+            } else {
+                location.reload();
+            }
+		}
 	</script>
 </body>
 

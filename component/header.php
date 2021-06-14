@@ -17,13 +17,13 @@
             <div class="top_header_all_select_box_wrapper">
                 <ul>
                     <li class="login">
-                        <?php if (scandir("../pemesanan")) { ?>
-                            <a href="../../auth/login.php">
-                                &nbsp;&nbsp;login
+                        <?php if (scandir("../../page")) { ?>
+                            <a href="../../index.php">
+                                &nbsp;&nbsp;Keluar
                             </a>
                         <?php } else { ?>
                             <a href="auth/login.php">
-                                &nbsp;&nbsp;login
+                                &nbsp;&nbsp;Masuk
                             </a>
                         <?php } ?>
                     </li>
@@ -33,28 +33,28 @@
     </div>
 </div>
 <nav class="navbar">
-    <?php if (scandir("../pemesanan")) { ?>
+    <?php if (scandir("../../page")) { ?>
         <div class="logo">
             <img src="../../assets/img/logo/MobiRent.png" alt="MobiRent">
         </div>
         <ul>
             <li id="beranda">
-                <a href="../../index.php" class="page-scroll">Beranda</a>
+                <a href="../pengguna/index.php" class="page-scroll">Beranda</a>
             </li>
             <li id="tentang">
-                <a href="../../tentang.php" class="page-scroll">Tentang</a>
+                <a href="../pengguna/tentang.php" class="page-scroll">Tentang</a>
             </li>
             <li id="mobil">
-                <a href="../../mobil.php" class="page-scroll">Mobil</a>
+                <a href="../pengguna/mobil.php" class="page-scroll">Mobil</a>
             </li>
             <li id="tim">
-                <a href="../../tim.php" class="page-scroll">Tim</a>
+                <a href="../pengguna/tim.php" class="page-scroll">Tim</a>
             </li>
             <li id="layanan">
-                <a href="../../layanan.php" class="page-scroll">Layanan</a>
+                <a href="../pengguna/layanan.php" class="page-scroll">Layanan</a>
             </li>
             <li id="kontak">
-                <a href="../../kontak.php" class="page-scroll">Kontak</a>
+                <a href="../pengguna/kontak.php" class="page-scroll">Kontak</a>
             </li>
         </ul>
     <?php } else { ?>

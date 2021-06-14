@@ -6,7 +6,7 @@
 <head>
 	<?php
 	$title = "MobiRent - Beranda";
-	include 'component/head.php'
+	include '../../component/head.php'
 	?>
 </head>
 <!-- End head -->
@@ -14,7 +14,7 @@
 <body>
 	<div id="app">
 		<!-- Start Header -->
-		<?php include 'component/header.php' ?>
+		<?php include '../../component/header.php' ?>
 
 		<header id="background">
 			<div class="jumbotron text-center">
@@ -53,7 +53,7 @@
 							<div class="col-12 col-md-4">
 								<!-- Start Aside -->
 								<aside class="img_tentang d-flex justify-content-center items-center flex-column">
-									<img src="assets/img/tentang.png" alt="">
+									<img src="../../assets/img/tentang.png" alt="">
 								</aside>
 								<!-- End Aside -->
 							</div>
@@ -77,9 +77,9 @@
 						<div class="row">
 							<div class="col-12 col-md-4">
 								<div class="thumbnail-img">
-									<a class="list_mobil" href="page/pemesanan/detail_mobil.php">
+									<a class="list_mobil" href="pemesanan/detail_mobil.php">
 										<div class="box blury-card">
-											<img src="assets/img/mobil/m1.jpg" alt="2015 Shevrolet Corvette Stingray Z51">
+											<img src="../../assets/img/mobil/m1.jpg" alt="2015 Shevrolet Corvette Stingray Z51">
 											<div class="frame">
 												<h2 class="heading-mobil">2015 Shevrolet Corvette Stingray Z51</h2>
 												<p class="paragraf-mobil mt-30"><b>Rp 1.709.490,00 / Day</b></p>
@@ -90,9 +90,9 @@
 							</div>
 							<div class="col-12 col-md-4">
 								<div class="thumbnail-img">
-									<a class="list_mobil" href="page/pemesanan/detail_mobil.php">
+									<a class="list_mobil" href="pemesanan/detail_mobil.php">
 										<div class="box blury-card">
-											<img src="assets/img/mobil/m2.jpg" alt="2020 Audi New Generation P00234">
+											<img src="../../assets/img/mobil/m2.jpg" alt="2020 Audi New Generation P00234">
 											<div class="frame">
 												<h2 class="heading-mobil">2020 Audi New Generation P00234</h2>
 												<p class="paragraf-mobil mt-30"><b>Rp 3.276.522 / Day</b></p>
@@ -103,9 +103,9 @@
 							</div>
 							<div class="col-12 col-md-4">
 								<div class="thumbnail-img">
-									<a class="list_mobil" href="page/pemesanan/detail_mobil.php">
+									<a class="list_mobil" href="pemesanan/detail_mobil.php">
 										<div class="box blury-card">
-											<img src="assets/img/mobil/m3.jpg" alt="2019 Shevrolet Corvette Stingray Red">
+											<img src="../../assets/img/mobil/m3.jpg" alt="2019 Shevrolet Corvette Stingray Red">
 											<div class="frame">
 												<h2 class="heading-mobil">2019 Shevrolet Corvette Stingray Red</h2>
 												<p class="paragraf-mobil mt-30"><b>Rp 3.276.522 / Day</b></p>
@@ -184,15 +184,15 @@
 		<!-- End Main -->
 
 		<!-- Start Footer -->
-		<?php include 'component/footer.php'  ?>
+		<?php include '../../component/footer.php'  ?>
 		<!-- End Footer -->
 	</div>
 
 	<!-- Start JS -->
-	<?php include 'component/js.php' ?>
+	<?php include '../../component/js.php' ?>
 	<!-- End JS -->
 
-	<script src="assets/js/index.js"></script>
+	<script src="../../assets/js/index.js"></script>
 	<script>
 		$('#beranda').addClass('active')
 

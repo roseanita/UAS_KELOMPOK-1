@@ -78,3 +78,4 @@ function hari_ini($hari){
 	return $hari_ini;
 
 }
+?>

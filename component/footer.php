@@ -1,7 +1,7 @@
 <footer>
     <div class="container">
         <div class="sec tentang-f">
-            <?php if (scandir("../pemesanan")) { ?>
+            <?php if (scandir("../../page")) { ?>
                 <img src="../../assets/img/logo/MobiRent-2.png" alt="MobiRent-2">
             <?php } else { ?>
                 <img src="assets/img/logo/MobiRent-2.png" alt="MobiRent-2">
@@ -12,14 +12,25 @@
         </div>
         <div class="sec menu">
             <h2>Tautan Langsung</h2>
-            <ul>
-                <li><a href="index.php">Beranda</a></li>
-                <li><a href="tentang.php">Tentang</a></li>
-                <li><a href="mobil.php">Mobil</a></li>
-                <li><a href="tim.php">Tim Kami</a></li>
-                <li><a href="layanan.php">Layanan</a></li>
-                <li><a href="kontak.php">Kontak</a></li>
-            </ul>
+            <?php if (scandir("../../page")) { ?>
+                <ul>
+                    <li><a href="../pengguna/index.php">Beranda</a></li>
+                    <li><a href="../pengguna/tentang.php">Tentang</a></li>
+                    <li><a href="../pengguna/mobil.php">Mobil</a></li>
+                    <li><a href="../pengguna/tim.php">Tim Kami</a></li>
+                    <li><a href="../pengguna/layanan.php">Layanan</a></li>
+                    <li><a href="../pengguna/kontak.php">Kontak</a></li>
+                </ul>
+            <?php } else { ?>
+                <ul>
+                    <li><a href="index.php">Beranda</a></li>
+                    <li><a href="tentang.php">Tentang</a></li>
+                    <li><a href="mobil.php">Mobil</a></li>
+                    <li><a href="tim.php">Tim Kami</a></li>
+                    <li><a href="layanan.php">Layanan</a></li>
+                    <li><a href="kontak.php">Kontak</a></li>
+                </ul>
+            <?php } ?>
         </div>
         <div class="sec contact">
             <h2>Hubungi Kami</h2>

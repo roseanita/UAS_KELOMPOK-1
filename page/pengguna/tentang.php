@@ -6,7 +6,7 @@
 <head>
 	<?php
 	$title = "MobiRent - Tentang";
-	include 'component/head.php'
+	include '../../component/head.php'
 	?>
 </head>
 <!-- End head -->
@@ -14,7 +14,7 @@
 <body>
 	<div id="app">
 		<!-- Start Header -->
-		<?php include 'component/header.php' ?>
+		<?php include '../../component/header.php' ?>
 
 		<div class="title_main_wrapper">
 			<div class="container">
@@ -56,7 +56,7 @@
 							<div class="col-12 col-md-6">
 								<!-- Start Aside -->
 								<aside class="d-flex justify-content-center items-center flex-column">
-									<img src="assets/img/tentang/foto.png" alt="Tentang" style="width: 100%; border-radius:5px; margin-top:25px;">
+									<img src="../../assets/img/tentang/foto.png" alt="Tentang" style="width: 100%; border-radius:5px; margin-top:25px;">
 								</aside>
 								<!-- End Aside -->
 							</div>
@@ -87,22 +87,22 @@
 						<div class="row partner-logos">
 							<div class="col-md-3 col-6">
 								<div class="partner-logo">
-									<img class="img-fluid" src="assets/img/mitra/partner-1.png" alt="Mitra" srcset="assets/img/mitra/partner-1.png 1x, assets/img/mitra/partner-1.png@2x 2x">
+									<img class="img-fluid" src="../../assets/img/mitra/partner-1.png" alt="Mitra" srcset="../../assets/img/mitra/partner-1.png 1x, ../../assets/img/mitra/partner-1.png@2x 2x">
 								</div>
 							</div>
 							<div class="col-md-3 col-6">
 								<div class="partner-logo">
-									<img class="img-fluid" src="assets/img/mitra/partner-2.png" alt="Mitra" srcset="assets/img/mitra/partner-2.png 1x, assets/img/mitra/partner-2.png@2x 2x">
+									<img class="img-fluid" src="../../assets/img/mitra/partner-2.png" alt="Mitra" srcset="../../assets/img/mitra/partner-2.png 1x, ../../assets/img/mitra/partner-2.png@2x 2x">
 								</div>
 							</div>
 							<div class="col-md-3 col-6">
 								<div class="partner-logo">
-									<img class="img-fluid" src="assets/img/mitra/partner-3.png" alt="Mitra" srcset="assets/img/mitra/partner-3.png 1x, assets/img/mitra/partner-3.png@2x 2x">
+									<img class="img-fluid" src="../../assets/img/mitra/partner-3.png" alt="Mitra" srcset="../../assets/img/mitra/partner-3.png 1x, ../../assets/img/mitra/partner-3.png@2x 2x">
 								</div>
 							</div>
 							<div class="col-md-3 col-6">
 								<div class="partner-logo">
-									<img class="img-fluid" src="assets/img/mitra/partner-4.png" alt="Mitra" srcset="assets/img/mitra/partner-4.png 1x, assets/img/mitra/partner-4.png@2x 2x">
+									<img class="img-fluid" src="../../assets/img/mitra/partner-4.png" alt="Mitra" srcset="../../assets/img/mitra/partner-4.png 1x, ../../assets/img/mitra/partner-4.png@2x 2x">
 								</div>
 							</div>
 						</div>
@@ -116,12 +116,12 @@
 		<!-- End Main -->
 
 		<!-- Start Footer -->
-		<?php include 'component/footer.php'  ?>
+		<?php include '../../component/footer.php'  ?>
 		<!-- End Footer -->
 	</div>
 
 	<!-- Start JS -->
-	<?php include 'component/js.php' ?>
+	<?php include '../../component/js.php' ?>
 	<!-- End JS -->
 
 	<script>

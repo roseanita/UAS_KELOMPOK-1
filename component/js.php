@@ -1,4 +1,4 @@
-<?php if (scandir("../pemesanan")) { ?>
+<?php if (scandir("../../page")) { ?>
     <script src="../../assets/js/jquery.min.js"></script>
     <script src="../../assets/js/jquery.easing.1.3.js"></script>
 <?php } else { ?>

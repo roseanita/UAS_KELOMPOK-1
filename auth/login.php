@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/button.css">
+    <link rel="stylesheet" href="../assets/css/validate-notif.css">
 
     <link rel="shortcut icon" href="../assets/img/icon/MobiRent.ico" type="image/x-icon">
 
@@ -19,58 +20,67 @@
 
 <body>
     <div class="container" id="container">
-        <div class="form-container sign-up-container">
-            <form action="">
-                <div class="judul">
-                    <h1>Daftar MobiRent</h1>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-pesan k">
-                            <label for="nama">Nama Lengkap</label>
-                            <input type="text" name="nama" class="form-control" id="nama" placeholder="Masukkan nama anda">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-pesan k">
-                            <label for="email">E-mail</label>
-                            <input type="email" name="email" class="form-control" id="email" placeholder="Masukkan email anda">
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="form-pesan k">
-                            <label for="kata_sandi">Kata Sandi</label>
-                            <input type="password" name="kata_sandi" class="form-control" id="kata_sandi" placeholder="Masukkan kata sandi anda">
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-12 mt-20">
-                        <button type="submit" class="y rent-btn">Daftar</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="form-container sign-in-container">
-            <div class="row">
+        <div class="row">
+            <div class="form-container sign-up-container">
                 <div class="col-12 col-md-12">
-                    <form action="#">
-                        <div class="logo">
+                    <form onsubmit="return daftar()" action="javascript:void(0)" id="form_daftar">
+                        <div class="judul">
+                            <h1>Daftar MobiRent</h1>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-pesan k">
+                                    <label for="nama">Nama Lengkap</label>
+                                    <input type="text" name="nama" class="form-control" id="nama" placeholder="Masukkan nama anda" onkeydown="validationForm_d()">
+                                </div>
+                                <span class="validation" id="validateNama"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-pesan k">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" name="email-d" class="form-control" id="email-d" placeholder="Masukkan email anda" onkeydown="validationForm_d()">
+                                </div>
+                                <span class="validation" id="validateEmail_d"></span>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-pesan k">
+                                    <label for="kata_sandi">Kata Sandi</label>
+                                    <input type="password" name="kata_sandi-d" class="form-control" id="kata_sandi-d" placeholder="Masukkan kata sandi anda" minlength="6" autocomplete="kata_sandi-d" onkeydown="validationForm_d()">
+                                </div>
+                                <span class="validation" id="validateKS_d"></span>
+                            </div>
+                            <div class="col-12 col-md-12 mt-10">
+                                <button type="submit" class="y rent-btn">Daftar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-container sign-in-container">
+                <div class="col-12 col-md-12">
+                    <form onsubmit="return masuk()" action="javascript:void(0)" id="form_masuk">
+                        <div class="logo" style="margin-bottom: 15px;">
                             <img src="../assets/img/logo/MobiRent.png" alt="">
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-pesan">
                                     <label for="email">E-mail</label>
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Masukkan email anda">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Masukkan email anda" onkeydown="validationForm()">
                                 </div>
+                                <span class="validation" id="validateEmail"></span>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-pesan">
                                     <label for="kata_sandi">Kata Sandi</label>
-                                    <input type="password" name="kata_sandi" class="form-control" id="kata_sandi" placeholder="Masukkan kata sandi anda">
+                                    <input type="password" name="kata_sandi" class="form-control" id="kata_sandi" placeholder="Masukkan kata sandi anda" minlength="6" autocomplete="kata_sandi" onkeydown="validationForm()">
                                 </div>
+                                <span class="validation" id="validateKS"></span>
                             </div>
-                            <div class="col-12 col-md-12 mt-20">
+                            <div class="col-12 col-md-12 mt-10">
                                 <button type="submit" class="purple rent-btn">Masuk</button>
                             </div>
                         </div>
@@ -105,5 +115,7 @@
         container.classList.remove("right-panel-active");
     });
 </script>
+<script src="../assets/js/validateMasuk.js"></script>
+<script src="../assets/js/validateDaftar.js"></script>
 
 </html>

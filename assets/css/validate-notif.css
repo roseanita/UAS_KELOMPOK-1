@@ -1,0 +1,20 @@
+span.validation {
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+#form_masuk .invalid, #form_daftar .invalid {
+    color: #dc3545;
+}
+
+#form_masuk .valid, #form_daftar .valid {
+    color: #42ba96;
+}
+
+/* 
+input{
+    border-color: #dc3545 !important;
+    box-shadow: 0.3px 0.3px 7px #dc3545;
+} */

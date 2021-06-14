@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +9,9 @@
 <head>
     <?php
     $title = "MobiRent - Pemesanan Selesai";
-    include '../../component/head.php'
+    include '../../component/head.php';
+    include '../../function/tanggal-indo.php';
+    include '../../function/random_number.php';
     ?>
 </head>
 <!-- End head -->
@@ -14,14 +19,14 @@
 <body>
     <div id="app">
         <!-- Start Header -->
-        <?php include '../../component/header.php' ?>
+        <?php include '../../component/header.php'; ?>
 
         <div class="title_main_wrapper">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="title_left_heading">
-                            <h1>Pilihan Mobil</h1>
+                            <h1>Pemesanan Selesai</h1>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -29,7 +34,7 @@
                             <div class="title_right_cont_wrapper">
                                 <ul>
                                     <li class="barrier">
-                                        <a href="index.php" style="text-decoration: none;">Beranda</a>
+                                        <a href="../pengguna/index.php" style="text-decoration: none;">Beranda</a>
                                     </li>
                                     <li style="line-height: 1;">Mobil</li>
                                 </ul>
@@ -85,47 +90,66 @@
                                 <div class="order-done">
                                     <img src="../../assets/img/selesai/icon-checked.png" alt=""></i>
                                     <h4 style="font-size: 25px;">TERIMA KASIH! PESANAN SUDAH DITERIMA</h4>
-                                    <h4 style="font-size: 25px;">NOMOR PESANAN: <span>#887768</span></h4>
+                                    <h4 style="font-size: 25px;">NOMOR PESANAN: <span>#<?=get_random_number();?></span></h4>
                                     <hr>
                                     <h4 style="font-size: 23px;">RINGKASAN</h4>
                                     <ul class="row list-unstyled">
                                         <li class="col-md-6">
                                             <h6 style="font-size: 20px;">Lokasi</h6>
-                                            <p style="font-size: 17px;">Pengambilan <span>Barcelona, Airport</span>
+                                            <p style="font-size: 17px;">Pengambilan <span><?= $_SESSION['step_1']['lokasi_pengambilan'] ?></span>
                                             </p>
-                                            <p style="font-size: 17px;">Pengantaran <span>Barcelona, Airport</span>
+                                            <p style="font-size: 17px;">Pengantaran <span><?= $_SESSION['step_1']['lokasi_pengantaran'] ?></span>
                                             </p>
                                         </li>
                                         <li class="col-md-6">
                                             <h6 style="font-size: 20px;">TANGGAL</h6>
-                                            <p style="font-size: 17px;">Pengambilan <span>16-01-2018 @ 10:00</span>
+                                            <p style="font-size: 17px;">Pengambilan <span>
+                                                    <?= tgl_indo($_SESSION['step_1']['waktu_pengambilan']) ?>,
+                                                    <?= $_SESSION['step_1']['jam_pengambilan'] ?> WIB</span>
                                             </p>
-                                            <p style="font-size: 17px;">Pengantaran <span>16-01-2018 @ 10:00</span>
+                                            <p style="font-size: 17px;">Pengantaran <span>
+                                                    <?= tgl_indo($_SESSION['step_1']['waktu_pengantaran']) ?>,
+                                                    <?= $_SESSION['step_1']['jam_pengambilan'] ?> WIB</span>
                                             </p>
                                         </li>
                                         <li class="col-md-6">
                                             <h6 style="font-size: 20px;">Mobil</h6>
-                                            <p style="font-size: 17px;">Audi Q3 <span>1 Hari</span></p>
+                                            <p style="font-size: 17px;">
+                                                <?= $_SESSION['step_2'][0] ?> <span>1 Hari</span></p>
                                         </li>
                                         <li class="col-md-6">
-                                            <h6 style="font-size: 20px;">Total</h6>
-                                            <p style="font-size: 17px;">Pembayaran <span><b>Rp 640.080,00</b></span>
+                                            <h6 style="font-size: 20px;">Total Pembayaran</h6>
+                                            <p style="font-size: 17px;">
+                                                <?= $_SESSION['step_3']['selector'] ?>
+                                                <span>
+                                                    <b>Rp <?= number_format($_SESSION['step_2'][1], 2, ',', '.'); ?></b>
+                                                </span>
                                             </p>
                                         </li>
                                         <li class="col-md-12">
                                             <h6 style="font-size: 20px;">Informasi Tagihan</h6>
-                                            <p style="font-size: 17px;">Nama_Depan Nama_Belakang
-                                                <br>Email
-                                                <br>No telepone
-                                                <br>Alamat_1
-                                                <br>Alamat-2
-                                                <br>Tanggal Perjalanan
-                                                <br>Waktu Perjalanan
+                                            <p style="font-size: 17px;">
+                                                <?= $_SESSION['step_3']['nama_depan'] ?> <?= $_SESSION['step_3']['nama_belakang'] ?>
+                                                <br><?= $_SESSION['step_3']['email'] ?>
+                                                <br><?= $_SESSION['step_3']['no_telp'] ?>
+                                                <br><?= $_SESSION['step_3']['dari_alamat'] ?>
+                                                <br><?= $_SESSION['step_3']['untuk_alamat'] ?>-2
+                                                <br><?= $_SESSION['step_3']['penumpang'] ?>
+                                                <br><?= tgl_indo($_SESSION['step_3']['tanggal_perjalanan']) ?>
+                                                <br><?= $_SESSION['step_3']['waktu_perjalanan'] ?> WIB
                                             </p>
                                         </li>
                                         <li class="col-md-12">
                                             <h6 style="font-size: 20px;">Informasi Tambahan</h6>
-                                            <p style="font-size: 17px;">Isi tambahan informasi.</p>
+                                            <?php if (empty($_SESSION['step_3']['pesan_tambahan'])) { ?>
+                                                <p style="font-size: 17px;">
+                                                    Tidak ada pesan tambahan 
+                                                </p>
+                                            <?php } else {?>
+                                                <p style="font-size: 17px;">
+                                                    <?= $_SESSION['step_3']['pesan_tambahan'] ?>
+                                                </p>
+                                            <?php }?>
                                         </li>
                                     </ul>
                                     <hr>
@@ -133,7 +157,7 @@
                                         <ul>
                                             <li>
                                                 <center>
-                                                    <a href="#" class="purple rent-btn">Print Order</a>
+                                                    <a href="print.php" class="purple rent-btn">Print Order</a>
                                                 </center>
                                             </li>
                                         </ul>
@@ -154,18 +178,11 @@
     </div>
 
     <!-- Start JS -->
-    <?php include '../../component/js.php' ?>
+    <?php include '../../component/js.php'; ?>
     <!-- End JS -->
 
     <script>
         $('#mobil').addClass('active')
-
-        function isNumberKey(evt) {
-            var charCode = (evt.which) ? evt.which : evt.keyCode;
-            if (charCode > 31 && (charCode < 48 || charCode > 57))
-                return false;
-            return true;
-        }
     </script>
 </body>
 

@@ -6,7 +6,7 @@
 <head>
 	<?php
 	$title = "MobiRent - Mobil";
-	include 'component/head.php'
+	include '../../component/head.php'
 	?>
 </head>
 <!-- End head -->
@@ -14,7 +14,7 @@
 <body>
 	<div id="app">
 		<!-- Start Header -->
-		<?php include 'component/header.php' ?>
+		<?php include '../../component/header.php' ?>
 
 		<div class="title_main_wrapper">
 			<div class="container">
@@ -85,14 +85,14 @@
 						</div>
 						<div class="row">
 							<div class="col-12 col-md-12">
-								<form action="#">
+								<form action="../../function/rental.php" method="POST">
 									<div class="row">
 										<div class="col-12 col-md-6">
 											<div class="row">
 												<div class="col-12 col-md-12">
 													<div class="form-group">
 														<label style="font-weight: bold;">Lokasi Pengambilan</label>
-														<input type="text" name="lokasi_pengambilan" class="form-control" id="lokasi_pengambilan" placeholder="Lokasi Pengambilan">
+														<input type="text" name="lokasi_pengambilan" class="form-control" id="lokasi_pengambilan" placeholder="Lokasi Pengambilan" required>
 													</div>
 												</div>
 
@@ -101,12 +101,12 @@
 												</div>
 												<div class="col-6 col-md-6">
 													<div class="form-group">
-														<input type="date" name="waktu_pengambilan" class="form-control" id="waktu_pengambilan">
+														<input type="date" name="waktu_pengambilan" class="form-control" id="waktu_pengambilan" required>
 													</div>
 												</div>
 												<div class="col-6 col-md-6">
 													<div class="form-group">
-														<input type="time" name="jam_pengambilan" class="form-control" id="jam_pengambilan">
+														<input type="time" name="jam_pengambilan" class="form-control" id="jam_pengambilan" required>
 													</div>
 												</div>
 											</div>
@@ -117,7 +117,7 @@
 												<div class="col-12 col-md-12">
 													<div class="form-group">
 														<label style="font-weight: bold;">Lokasi Pengantaran</label>
-														<input type="text" name="lokasi_pengantaran" class="form-control" id="lokasi_pengantaran" placeholder="Lokasi Pengantaran">
+														<input type="text" name="lokasi_pengantaran" class="form-control" id="lokasi_pengantaran" placeholder="Lokasi Pengantaran" required>
 													</div>
 												</div>
 
@@ -126,18 +126,18 @@
 												</div>
 												<div class="col-6 col-md-6">
 													<div class="form-group">
-														<input type="date" name="waktu_pengantaran" class="form-control" id="waktu_pengantaran">
+														<input type="date" name="waktu_pengantaran" class="form-control" id="waktu_pengantaran" required>
 													</div>
 												</div>
 												<div class="col-6 col-md-6">
 													<div class="form-group">
-														<input type="time" name="jam_pengantaran" class="form-control" id="jam_pengantaran">
+														<input type="time" name="jam_pengantaran" class="form-control" id="jam_pengantaran" required>
 													</div>
 												</div>
 											</div>
 										</div>
 										<div class="col-12 col-md-12 col-xl-12 mt-20">
-											<a href="pilih_mobil.php" class="purple rent-btn" style="font-size: 15px; margin:0; cursor:pointer;">Lanjut</a>
+											<button type="submit" name="step_1" class="purple rent-btn" style="font-size: 15px; margin:0; cursor:pointer;">Lanjut</button>
 										</div>
 									</div>
 								</form>
@@ -151,12 +151,12 @@
 		<!-- End Main -->
 
 		<!-- Start Footer -->
-		<?php include 'component/footer.php'  ?>
+		<?php include '../../component/footer.php'  ?>
 		<!-- End Footer -->
 	</div>
 
 	<!-- Start JS -->
-	<?php include 'component/js.php' ?>
+	<?php include '../../component/js.php' ?>
 	<!-- End JS -->
 
 	<script>

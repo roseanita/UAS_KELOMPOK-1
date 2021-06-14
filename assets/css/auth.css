@@ -63,7 +63,7 @@ button {
   cursor: pointer;
   font-weight: 500;
   font-size: 14px;
-  margin: 0;
+  margin: 4px 0 0 0;
   width: 100%;
   border-color: #ffd700;
   color: #ffd700;
@@ -124,10 +124,6 @@ button.ghost {
   border-color: #ffffff;
 }
 
-.logo {
-  margin-bottom: 50px;
-}
-
 form {
   background-color: #ffffff;
   display: flex;
@@ -138,7 +134,7 @@ form {
   height: 100%;
 }
 
-form img {
+form img, form .judul h1 {
   margin-top: 30px;
 }
 
@@ -146,8 +142,12 @@ form img {
   padding: 3px 0;
 }
 
+.form-pesan.k{
+  padding: 4px 0;
+}
+
 .form-pesan input {
-  margin: 15px 0 !important;
+  margin: 15px 0 5px 0 !important;
   font-size: 17px;
 }
 
